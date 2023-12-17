@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrrat', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(bottom #ffcc00, #ff6600);
+    background-image: url('nat2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span {
+    color: red;
+}
+
+a {
+   display: flex;
+   justify-content: space-between;
+}
+
+li {
+    align-items: right;
+}

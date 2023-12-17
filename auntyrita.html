@@ -10,14 +10,21 @@
      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous" 
       referrerpolicy="no-referrer" />
+      <!-- Add these links in the head section of your HTML -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- close of font awesome link -->
 </head>
 <body>
     <!--header section begins here-->
     <header class="header">
         <a href="#" class="logo">ritcee<span>Concept</span></a>
+    <div class="menu-toggle">
         <a href="#"><i class="fa-solid fa-bars"></i></a>
-        <nav class="nav-bar">
+    </div>
+        <nav>
+        <div class="nav-bar">
             <a id="switch" href="#">home</a>
             <a id="switch" href="#about">about</a>
             <a id="switch" href="#services">services</a>
@@ -52,7 +59,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="outsoucing2.jpg" alt="interviews through video conferences">
+                    <img src="interview.jpg" alt="interviews">
                 </div>
             </div>
         </div>
@@ -106,7 +113,7 @@
 <div class="box-container">
         <div class="box">
         <div class="image">
-            <img src="c:\Users\USER\Downloads\auntyrita1.jpg" alt=""> 
+            <img src="consist.jpg" alt=""> 
             <div class="content">
                 <h3>support</h3>
                 <!-- <p>our client support are taillored for your demands, to provide the best employers that suit -->
@@ -119,7 +126,7 @@
             
         <div class="box"> 
             <div class="image">
-            <img src="c:\Users\USER\Downloads\auntyrita3.jpg" alt="">
+            <img src="professional.jpg" alt="">
            <div class="content">
             <h3>excellence</h3>
             <!-- <p>at ritcee concept we belive that every company deserves excellence and thats why our blend of expertise choose -->
@@ -132,7 +139,7 @@
 
         <div class="box">
             <div class="image">
-            <img src="c:\Users\USER\Downloads\auntyrita4.jpg" alt="">
+            <img src="excellence.jpg" alt="">
             <div class="content">
             <h3>consistency</h3>
             <!-- <p>Consistency which is pivotal for acheiveing long term success, we ensure that employers align seamlessly -->
@@ -148,18 +155,33 @@
     <!-- client section -->
     <section class="client">
         <h1>our clients</h1>
-    <div class="box-container">
-        <div class="gallary">
-            <div>
-                <span><img src="dove.png" width="250px" height="250px" alt=""></span>
-                <span><img src="syscodes.png" width="300px" height="250px" alt=""></span>
-                <span><img src="vdt.png" width="300px" height="250px" alt=""></span>
-                <span><img src="magnumstiches.jpg" width="250px" height="250px" alt=""></span>
-                <span><img src="splendidevents.png" width="350px" height="250px" alt=""></span>
-                <span><img src="justelectron.jpg" width="300px" height="250px" alt=""></span>
+        <div class="box-container">
+           <div class="gallary">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span><img src="dove.png" width="250px" height="250px" alt=""></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span><img src="syscodes.png" width="300px" height="250px" alt=""></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span><img src="vdt.png" width="300px" height="250px" alt=""></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span><img src="magnumstiches.jpg" width="250px" height="250px" alt=""></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span><img src="splendidevents.png" width="350px" height="250px" alt=""></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span><img src="justelectron.jpg" width="300px" height="250px" alt=""></span>
+                        </div>
+    </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </section>
     <!-- end of client section -->
 <!-- contact section start here  -->
