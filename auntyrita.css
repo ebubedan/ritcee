@@ -140,10 +140,16 @@ span {
     margin-left: 8rem; 
 }
 
-.header .fa-solid {
+.header  {
     font-size: 2rem;
     color: var(--white);
+}
+
+
+
+.menu-toggle {
     display: none;
+    cursor: pointer;
 }
 /*close of header section*/
 
@@ -218,6 +224,8 @@ span {
     grid-template-columns: auto auto auto;
     gap: 40px;
 }
+
+
 
 
 /*end of client section*/
@@ -396,13 +404,34 @@ p {
     .navbar .box-container a{
         padding: 10px;
     }
-    .header .navbar.header.active {
+    .header .navbar.header {
         color: var(--black);
         margin: 0;
         margin: 2rem 0;
-        display: block;
+        display: none;
         justify-content: center;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem; /* Adjust the positioning based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        z-index: 99;
+    }
+    
+    .nav-links.active a {
+        padding: 1rem;
+        text-align: center;
+    }
+    
     .contact {
         display: grid;
         grid-template-columns: 1fr;
