@@ -18,28 +18,40 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
     document.querySelector('.nav-links').classList.toggle('active');
 });
 
-// Add this script at the end of your body or in a separate script file
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        // Add breakpoints for responsive design
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-        },
-    },
+
+
+// Function to close the menu when a link is clicked
+/*function closeMenu() {
+    document.getElementById('menuToggle').checked = false;
+  }*/
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('menuToggle');
+    var nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('change', function () {
+        if (menuToggle.checked) {
+            // Checkbox is checked, show the menu
+            nav.style.display = 'block';
+        } else {
+            // Checkbox is unchecked, hide the menu
+            nav.style.display = 'none';
+        }
+    });
+
+    // Close the menu when a navigation link is clicked
+    var navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            menuToggle.checked = false;
+            nav.style.display = 'none';
+        });
+    });
 });
 
+function closeMenu() {
+    document.getElementById('menuToggle').checked = false;
+    document.querySelector('nav').style.display = 'none';
+}
+
+  
