@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer" />
       <!-- Add these links in the head section of your HTML -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="mobile-view.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- close of font awesome link -->
@@ -33,6 +34,18 @@
         </nav>
     </header>
     <!-- header section ends here -->
+    <div class="for-mobile">
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle">&#9776;</label>
+        <nav>
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#portfolios" onclick="closeMenu()">Portfolio</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </nav>
+
+    </div>
     <!-- home section start -->
     <section class="home" id="home">
         <h1>delivering values,<span>professionalism and</span> competency.</h1>
@@ -46,14 +59,13 @@
             <div class="box">
                 <h1 class="heading">about us</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Iure pariatur a eius voluptatum ut rerum! Laudantium quisquam,
-                     magnam enim quasi facilis totam esse maxime eaque ut veniam! Praesentium, similique officia.
+                    welcome to Ritcee agengy, your number one trusted partner in outsourcing solution.
+                    At Ritcee concepts, we specilize in providing top-notch outsourcing services tailored to meet the unique needs of your business.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Natus quasi necessitatibus facere explicabo iure possimus aut rerum error animi.
-                     Excepturi, blanditiis? Debitis laboriosam, eligendi laudantium illo velit possimus nemo ipsum!
+                    At Ritcee concept, we understand that every business strives success, and thats why we offer a diverse range of outsourcing
+                    solutions from recruitment to corporated gift services. Our dedicted teams of professionals combines industry expertise with innovative approaches to ensure optimal efficiency.
+                    Let us handle the intricacies of outsourcing services while you focus on what matters most-growing your business.
                 </p>
             </div>
 
@@ -73,9 +85,8 @@
             <i style="font-size: 40px;" class="fa-solid fa-users"></i>
                 <h3>recruitment</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Porro aliquid vel dolor unde eos minima ipsum itaque ullam accusamus tempora!
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolorum!
+                   our team of skilled recruiters employs a strategic and data-driven approach to identify and attract candidtes
+                   who not only meet but exceed your company's expecttions. From comprehensive candidate profiling to in-depth skills assessments,
                 </p>
             </div>
 
@@ -83,8 +94,8 @@
             <i style="font-size: 40px;" class="fa-solid fa-rocket"></i>
                 <h3>learning</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt laudantium animi quis harum sed error!
-                     Enim excepturi eveniet amet veniam quam similique ratione ea rem accusantium omnis, iusto vero dolorem.
+                   in the dynamic landscape of the outsourcing industry, staying ahead means embracing a culture of continous learning. At Ritcee concepts, we recognie that
+                   the key to success lies in the ability to adapt, evolve, and innovate.
                 </p>
             </div>
 
@@ -92,9 +103,8 @@
             <i style="font-size: 40px;" class="fa-solid fa-screwdriver-wrench"></i>
                 <h3>development</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, atque dolore, rem quos quo aliquid unde 
-                    nostrum cupiditate cum velit placeat fuga, voluptatum repudiandae officiis facere.
-                    Repellendus natus tenetur voluptatum!
+                    development is the key to unlocking ones full potential and overcoming challanges. We belive in empowering individuals to develop
+                    their skills, mindset, and emotional intelligence that enhances their personal lives and collective success.
                 </p>
             </div>
             
@@ -102,7 +112,8 @@
             <i style="font-size: 40px;" class="fa-solid fa-gift"></i>
                 <h3>coperated gift</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi officia veniam blanditiis dolores ipsa a quaerat amet tempora aliquam magnam ad facilis, reiciendis inventore impedit tempore itaque eius ipsam.
+                    in the corporate world every gesture matters. Elevate your corporate relationship with gift that speak volumes. choose Ritcee concepts
+                    for a gifting experience that goes beyond the ordinary-where every gift is a testatament.
                 </p>
         </div>
     </section>
@@ -111,78 +122,69 @@
     <section class="portfolios" id="portfolios">
         <h1 class="heading">portfolio</h1>
 <div class="box-container">
-        <div class="box">
+        <div class="box" >
         <div class="image">
-            <img src="consist.jpg" alt=""> 
-            <div class="content">
-                <h3>support</h3>
-                <!-- <p>our client support are taillored for your demands, to provide the best employers that suit -->
-                    <!-- desired positions ranging from top position to the least positions, we conduct inspections on weekly basis -->
-                <!-- </p> -->
-                <!-- <a href="#" class="btn">learn more</a> -->
+            <img src="recruitment.jpg"  id="cace" alt="">
             </div>
             </div>
-           </div>
             
         <div class="box"> 
             <div class="image">
-            <img src="professional.jpg" alt="">
-           <div class="content">
-            <h3>excellence</h3>
-            <!-- <p>at ritcee concept we belive that every company deserves excellence and thats why our blend of expertise choose -->
-             <!-- employers that are diligent and productive to the company advantage. -->
-            <!-- </p> -->
-            <!-- <a href="#" class="btn">learn more</a> -->
+            <img src="corporated.jpg"  id="cace" style="filter: sepia(100%);" alt="">
            </div>
-        </div>
         </div>
 
-        <div class="box">
+        <div class="box" >
             <div class="image">
-            <img src="excellence.jpg" alt="">
-            <div class="content">
-            <h3>consistency</h3>
-            <!-- <p>Consistency which is pivotal for acheiveing long term success, we ensure that employers align seamlessly -->
-            <!-- with the company objective by fostering a stable and efficient working relationship -->
-            <!-- </p> -->
-            <!-- <a href="#" class="btn">learn more</a> -->
+            <img src="professional.jpg" id="cace" alt="">
            </div>
-        </div>
         </div>
     </div>
         <!-- end of portfolio section -->
     </section>
     <!-- client section -->
-    <section class="client">
+    <div class="client">
         <h1>our clients</h1>
-        <div class="box-container">
-           <div class="gallary">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <span><img src="dove.png" width="250px" height="250px" alt=""></span>
-                        </div>
-                        <div class="swiper-slide">
-                            <span><img src="syscodes.png" width="300px" height="250px" alt=""></span>
-                        </div>
-                        <div class="swiper-slide">
-                            <span><img src="vdt.png" width="300px" height="250px" alt=""></span>
-                        </div>
-                        <div class="swiper-slide">
-                            <span><img src="magnumstiches.jpg" width="250px" height="250px" alt=""></span>
-                        </div>
-                        <div class="swiper-slide">
-                            <span><img src="splendidevents.png" width="350px" height="250px" alt=""></span>
-                        </div>
-                        <div class="swiper-slide">
-                            <span><img src="justelectron.jpg" width="300px" height="250px" alt=""></span>
-                        </div>
     </div>
-                    </div>
+    <div class="slide-wrapper">
+                <div class="myslides">
+                    <img src="dove.png" id="age" alt="">
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="myslides">
+                    <img src="syscodes.png" id="age" alt="">
+                </div>
+                <div class="myslides">
+                    <img src="vdt.png" id="age" alt="">
+                </div>
+                <div class="myslides">
+                    <img src="magnumstiches.jpg" id="age" alt="">
+                </div>  
+                <div class="myslides">
+                    <img src="justelectron.jpg" id="age">
+                </div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("myslides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+    }
+</script>
+</div>
     <!-- end of client section -->
 <!-- contact section start here  -->
     <footer class="contact" id="contact">
@@ -224,7 +226,14 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
     </script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <body>
+        <!-- Your existing HTML content -->
+    
+        <!-- Add the Swiper JavaScript file -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+    </body>
+    
     <!-- end of ionicon cdn -->
     <script src="auntyrita.js"></script>
 </body>
